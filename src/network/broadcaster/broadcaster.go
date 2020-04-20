@@ -22,7 +22,7 @@ func BroadcastListener(networkRx <-chan GlobalElevator,
 		case newPacket := <-networkRx:
 
 			if newPacket.ID == localID {
-				fmt.Println("nyinfo")
+				
 				break
 			}
 

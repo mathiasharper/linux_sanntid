@@ -100,8 +100,8 @@ func RunDistributor(
 	elevio.SetButtonLights(lightMatrix)
 
 	for {
-		//watchdogUpdateStateC <- globalState.Copy()
-		//updateBroadcastedPacketC <- globalState.Copy()
+		watchdogUpdateStateC <- globalState.Copy()
+		updateBroadcastedPacketC <- globalState.Copy()
 
 		select {
 
